@@ -1,16 +1,63 @@
-# ripple_animation_flutter
+# Ripple Animation Flutter App
 
-A new Flutter project.
+![Ripple Animation](https://github.com/user-attachments/assets/45002b6e-c46f-43a6-ac56-4aa1d68dc8c9)
+
+## Overview
+
+This Flutter application demonstrates a ripple animation effect using a custom clipper. The app displays two images that transition between each other with a circular reveal effect when tapped.
+
+## Features
+
+- **Ripple Animation**: A custom clipper creates a ripple effect that expands from the tap location.
+- **Image Transition**: The app toggles between two images with a smooth animation.
+- **Responsive Design**: The animation and layout adapt to different screen sizes.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK: [Install Flutter](https://flutter.dev/docs/get-started/install)
+- Dart: Included with Flutter
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/NijatNaghiyev/ripple_animation_flutter.git
+   cd ripple_animation_flutter
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   flutter pub get
+   ```
+
+3. **Run the app:**
+
+   ```bash
+   flutter run
+   ```
+
+## Project Structure
+
+- **lib/screens/my_home_screen.dart**: Contains the main screen with the ripple animation.
+- **lib/helpers/ripple_animation.dart**: Defines the custom clipper for the ripple effect.
+- **lib/data/images.dart**: Holds the image URLs used in the app.
+- **lib/mixins/my_home_screen_mixin.dart**: Provides animation functionality and state management for the home screen.
+
+## Usage
+
+- Tap on the image to trigger the ripple animation.
+- The animation will reveal the second image and then revert back to the first image.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
+
+
+## Acknowledgments
+
+- [Flutter](https://flutter.dev/)
+- [Dart](https://dart.dev/)
