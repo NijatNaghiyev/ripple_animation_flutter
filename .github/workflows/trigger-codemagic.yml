@@ -17,6 +17,5 @@ jobs:
             -H "Content-Type: application/json" \
             -d '{
               "appId": "686eb0d80bdc7943b9a1bd21",
-              "workflowId": "default",
               "branch": "main"
             }'
