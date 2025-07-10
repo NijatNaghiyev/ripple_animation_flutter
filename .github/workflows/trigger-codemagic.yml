@@ -16,6 +16,9 @@ jobs:
             -H "x-auth-token: ${{ secrets.CODEMAGIC_TOKEN }}" \
             -H "Content-Type: application/json" \
             -d '{
-              "appId": "686eb0d80bdc7943b9a1bd21",
+              "appId": "Default workflow",
+              "workflowId": "default",
               "branch": "main"
             }'
+      - name: Codemagic Build Triggered
+        run: echo "Codemagic build request has been sent."
