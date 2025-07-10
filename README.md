@@ -8,7 +8,7 @@ This Flutter application demonstrates a ripple animation effect using a custom c
 
 ## Features
 
-- **Ripple Animation**: A custom clipper creates a ripple effect that expands from the tap location.
+- **Ripple Animation**: A custom clipper creates a ripple effect that expands from the tap location. 
 - **Image Transition**: The app toggles between two images with a smooth animation.
 - **Responsive Design**: The animation and layout adapt to different screen sizes.
 
