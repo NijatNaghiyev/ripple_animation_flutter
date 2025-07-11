@@ -17,7 +17,7 @@ This Flutter application demonstrates a ripple animation effect using a custom c
 ### Prerequisites
 
 - Flutter SDK: [Install Flutter](https://flutter.dev/docs/get-started/install)
-- Dart: Included with Flutter
+- Dart: Included with Flutter 
 
 ### Installation
 
