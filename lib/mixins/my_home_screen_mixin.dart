@@ -1,9 +1,13 @@
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 import 'package:ripple_animation_flutter/screens/my_home_screen.dart';
 
 /// A mixin that provides animation functionality for [MyHomeScreen].
 /// This mixin handles the ripple animation effect and image toggle state.
 mixin MyHomeScreenMixin on State<MyHomeScreen>, TickerProvider {
+  /// Firebase Analytics instance for tracking events
+  final FirebaseAnalytics analytics = FirebaseAnalytics.instance;
+
   /// Controller for the ripple animation
   late final AnimationController controller;
 
@@ -19,6 +23,7 @@ mixin MyHomeScreenMixin on State<MyHomeScreen>, TickerProvider {
   /// Handles tap events to trigger the ripple animation.
   /// Updates the center position and starts the animation.
   Future<void> onTapDown(TapDownDetails details) async {
+    await analytics.logEvent(name: 'ripple_animation_triggered');
     // Prevent multiple animations from running simultaneously
     if (controller.isAnimating) return;
 

@@ -17,6 +17,7 @@ class MyHomeScreen extends StatefulWidget {
 /// [MyHomeScreenMixin] for shared functionality.
 class _MyHomeScreenState extends State<MyHomeScreen>
     with SingleTickerProviderStateMixin, MyHomeScreenMixin {
+      
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.sizeOf(context);
