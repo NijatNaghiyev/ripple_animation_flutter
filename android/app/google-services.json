@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "267960292278",
+    "project_id": "ripple-animation-fluttter",
+    "storage_bucket": "ripple-animation-fluttter.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267960292278:android:a92907e199f8cbf135a717",
+        "android_client_info": {
+          "package_name": "com.example.ripple_animation_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8kErD7KXvreRNZRZzyhzeWD4jNVCC1yI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
