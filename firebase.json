@@ -1,1 +1,45 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"ripple-animation-fluttter","appId":"1:267960292278:android:a92907e199f8cbf135a717","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"ripple-animation-fluttter","appId":"1:267960292278:ios:d9c5945b2263421535a717","uploadDebugSymbols":true,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"ripple-animation-fluttter","configurations":{"android":"1:267960292278:android:a92907e199f8cbf135a717","ios":"1:267960292278:ios:d9c5945b2263421535a717","web":"1:267960292278:web:d5b462b340760c6c35a717"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "ripple-animation-fluttter",
+          "appId": "1:267960292278:android:a92907e199f8cbf135a717",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "ripple-animation-fluttter",
+          "appId": "1:267960292278:ios:d9c5945b2263421535a717",
+          "uploadDebugSymbols": true,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "ripple-animation-fluttter",
+          "configurations": {
+            "android": "1:267960292278:android:a92907e199f8cbf135a717",
+            "ios": "1:267960292278:ios:d9c5945b2263421535a717",
+            "web": "1:267960292278:web:d5b462b340760c6c35a717"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
