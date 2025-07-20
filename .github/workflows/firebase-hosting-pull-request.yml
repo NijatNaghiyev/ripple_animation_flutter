@@ -1,35 +1,32 @@
-name: Deploy to Firebase Hosting on Push
+name: Deploy to Firebase Hosting
 
 on:
   push:
     branches:
       - main
 
-permissions:
-  checks: write
-  contents: read
-  pull-requests: write
-
 jobs:
-  build_and_deploy:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Flutter
+      - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.32.7' # Dart 3.7 içerir
+          flutter-version: '3.32.7' # kendi sürümünü kullan
 
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Build Flutter web
+      - name: Build Web
         run: flutter build web
 
-      - name: Deploy to Firebase Hosting
+      - name: Deploy to Firebase
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_RIPPLE_ANIMATION_FLUTTTER }}
           projectId: ripple-animation-fluttter
+          channelId: live
