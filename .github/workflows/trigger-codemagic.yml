@@ -1,4 +1,4 @@
-name: Trigger Codemagic on Push to Main
+name: Trigger Codemagic on Push to Main 
 
 on:
   push:
